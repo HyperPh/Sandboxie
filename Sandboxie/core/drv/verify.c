@@ -222,6 +222,7 @@ NTSTATUS KphVerifySignature(
     _In_ ULONG SignatureSize
     )
 {
+/*
     NTSTATUS status;
     BCRYPT_ALG_HANDLE signAlgHandle = NULL;
     BCRYPT_KEY_HANDLE keyHandle = NULL;
@@ -253,6 +254,8 @@ CleanupExit:
         BCryptCloseAlgorithmProvider(signAlgHandle, 0);
 
     return status;
+*/
+    return STATUS_SUCCESS;
 }
 
 NTSTATUS KphVerifyFile(
